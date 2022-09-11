@@ -3,83 +3,139 @@
   <head>
     <meta charset="UTF-8" />
     <title>Alina Akhankova CV</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <table>
-      <tr>
-        <td>
-          <img
-            src="https://avatars.githubusercontent.com/u/36796827?v=4"
-            alt="Alina Akhankova"
-            width="200"
-          />
-        </td>
-        <td>
+    <div class="container">
+      <div class="info">
+        <img
+          class="avatar"
+          src="https://avatars.githubusercontent.com/u/36796827?v=4"
+          alt="Alina Akhankova"
+        />
+        <div class="info-text">
           <h1>Alina Akhankova</h1>
-          <p><em>Junior JS Developer</em></p>
-        </td>
-      </tr>
-    </table>
-    <hr />
-    <h2>Personal Information</h2>
-    <ul>
-      <li>
-        <br />
-        Permanent address: <br />
-        Hermine-von-Parish-Str. 66 <br />
-        81245 München
-      </li>
-      <li>+49 170 284 50 93</li>
-      <li>akhankova.a@gmail.com</li>
-      <li>Date of Birth: 25.07.1989</li>
-      <li>Nationality: Belarusian</li>
-      <li>Status: Married</li>
-      <li>
-        <a href="https://github.com/Akhankova" target="_blank">GitHub</a>
-      </li>
-    </ul>
-    <hr />
-    <h2>WORKING EXPERIENCE</h2>
-    <table>
-      <tr>
-        <td>04.2021 – until today</td>
-        <td>HTML ACADEMY, ONLINE SCHOOL</td>
-        <td>Trainee JS/React Developer (remote)</td>
-      </tr>
-      <tr>
-        <td>12.2016 – until today</td>
-        <td>ZAUSINGER GMBH & CO. KG, MUNICH, GERMANY</td>
-        <td>Financial Manager</td>
-      </tr>
-    </table>
-    <hr />
-    <h2>EDUCATION</h2>
-    <hr />
-    <h2>LANGUAGES AND COMPUTER LITERACY</h2>
-    <hr />
-    <h2>WRITE ME!</h2>
-    <form action="/index.html">
-      <label for="name">Name</label>
-      <br>
-      <input type="text" name="" id="name" />
-      <br />
-      <br />
-      <label for="vorname">Vorname</label>
-      <br>
-      <input type="text" name="" id="vorname" />
-      <br />
-      <br />
-      <label for="email">Email</label>
-      <br>
-      <input type="email" name="" id="email" />
-      <br />
-      <br />
-      <label for="textInfo">Text</label>
-      <br>
-      <textarea type="text" name="" id="textInfo" rows='5' cols='16'></textarea>
-      <br />
-      <br />
-      <input type="submit" value="Send!" />
-    </form>
+          <p>Junior JS Developer</p>
+          <div class="person-info">
+  
+            <span>
+              <br />
+              Hermine-von-Parish-Str. 81245 München
+              <br />
+              +49 170 284 50 93
+              <br />
+              akhankova.a@gmail.com
+              <br />
+              Date of Birth: 25.07.1989
+              <br />
+              Nationality: Belarusian
+              <br />
+              Status: Married
+        
+            </span>
+            <br><br><a href="https://github.com/Akhankova" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <hr />
+      <div class="card bg-yellow">
+        <h2>WORKING EXPERIENCE</h2>
+        <table class="table">
+          <tr>
+            <td>04.2021 – until today</td>
+            <td>HTML ACADEMY, ONLINE SCHOOL</td>
+            <td>Trainee JS/React Developer (remote)</td>
+          </tr>
+          <tr>
+            <td>12.2016 – until today</td>
+            <td>ZAUSINGER GMBH & CO. KG, MUNICH, GERMANY</td>
+            <td>Financial Manager</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-green">
+        <h2>EDUCATION</h2>
+        <table class="table">
+          <tr>
+            <td>04.2021 – until today</td>
+            <td>FURTHER EDUCATION, HTML ACADEMY</td>
+            <td>Javascript/React Developer profession</td>
+          </tr>
+          <tr>
+            <td>02.2018 – 07.2018</td>
+            <td>FURTHER EDUCATION, HTML ACADEMY</td>
+            <td>HTML & CSS/Javascript, Level 1</td>
+          </tr>
+          <tr>
+            <td>04.2016 – 10.2016</td>
+            <td>FURTHER EDUCATION, DREXLER GMBH, MUNICH</td>
+            <td>Accounting and controlling</td>
+          </tr>
+          <tr>
+            <td>09.2007 – 06.2011</td>
+            <td>DIPLOMA IN ECONOMICS</td>
+            <td>Belarusian State University, Faculty of Finance and Credit</td>
+          </tr>
+        </table>
+      </div>
+      <div class="card bg-red">
+        <h2>LANGUAGES AND COMPUTER LITERACY</h2>
+        <h3>Languages</h3>
+        <ul class="list">
+          <li>German: fluent</li>
+          <li>English: fluent</li>
+          <li>Russian: mother tongue</li>
+          <li>Belarusian: mother tongue</li>
+        </ul>
+        <h3>Computer Literacy</h3>
+        <ul class="list">
+          <li>Microsoft Office</li>
+          <li>JavaScript, React, Redux, TypeScript, HTML5, CSS</li>
+          <li>GitHub, GitHub Desktop, Atlassian SourceTree</li>
+          <li>DATEV, LEXWARE, KWP</li>
+        </ul>
+      </div>
+
+      <div class="contact">
+        <h2>WRITE ME!</h2>
+        <form action="/index.html">
+          <div class="row">
+            <div class="form-group">
+              <label for="name">Name</label>
+
+              <input type="text" name="" id="name" />
+            </div>
+            <div class="form-group">
+              <label for="vorname">Vorname</label>
+
+              <input type="text" name="" id="vorname" />
+            </div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="textInfo">Text</label>
+
+            <textarea
+              type="text"
+              name=""
+              id="textInfo"
+              rows="5"
+              cols="16"
+            ></textarea>
+          </div>
+          <input class='btn' type="submit" value="Send!" />
+        </form>
+      </div>
+    </div>
   </body>
 </html>
